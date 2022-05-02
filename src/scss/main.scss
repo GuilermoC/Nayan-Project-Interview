@@ -1,0 +1,55 @@
+// Variables
+// Colors: black, white, #e5e5e5
+
+// Elements
+html, body {
+    font: 16px / 1.3 'Roboto', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    
+    counter-reset: bulletpoints; // Counter bulletpoints
+}
+
+h1, h2, h3 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 7rem;
+    line-height: 0.8;
+    margin: 3rem 0;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin: 2.5rem 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+// Custom layout elements
+.container {
+    margin: 0 13rem; // TODO: in design this is 16rem
+    text-align: center;
+}
+
+.row {
+    padding: 5rem 0;
+
+    &.row--countdown {
+        padding: 8.5rem 0;
+    }
+}
+
+// Custom elements
+.bulletpoints {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6rem;
+}

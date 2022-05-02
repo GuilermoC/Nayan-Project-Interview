@@ -1,0 +1,24 @@
+.bulletpoint {
+
+    .bulletpoint__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #e5e5e5;
+
+        border-radius: 50%;
+
+        margin: 0 auto; // center
+        
+        // square to circle
+        width: 6rem;
+        height: 6rem;
+
+        // Counter logic
+        &::before {
+            counter-increment: bulletpoints;
+            content: counter(bulletpoints);
+        }
+    }
+}
