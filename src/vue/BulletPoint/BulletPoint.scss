@@ -11,11 +11,11 @@
 
         margin: 0 auto; // center
         
-        // square to circle
+        // square => circle
         width: 6rem;
         height: 6rem;
 
-        // Counter logic
+        // Counter
         &::before {
             counter-increment: bulletpoints;
             content: counter(bulletpoints);

@@ -3,10 +3,10 @@
         <div class="container">
             <div class="row row--countdown">
             
-            <h1>{{ title }}</h1>
-            <div class="countdown">
-                <CountdownUnit v-for="(item, index) in timeDifferenceObj" :key='index' :value='item' :unit='index' />
-            </div>
+                <h1>{{ title }}</h1>
+                <div class="countdown">
+                    <CountdownUnit v-for="(item, index) in timeDifferenceObj" :key='index' :value='item' :unit='index' />
+                </div>
 
             </div>
         </div>
@@ -58,7 +58,7 @@ export default {
 
     mounted() {
         setInterval(() => {
-            this.calculateTimeDifference( Date.now(), new Date(2022, 11, 25) ); // black friday this year is 25th of november
+            this.calculateTimeDifference( Date.now(), new Date('November 22, 2022') ); // black friday this year is 22/25th of november
         }, 1000);
     }
 

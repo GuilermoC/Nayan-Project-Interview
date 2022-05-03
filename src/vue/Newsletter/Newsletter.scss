@@ -4,32 +4,47 @@
 
     .newsletter__form {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
 
         margin: 4rem;
 
-        input {
-            all: unset; // remove existing styling
+        div {
 
-            background-color: #e5e5e5;
-            text-align: left;
-            padding: 1.5rem 1rem;
-            width: 21rem;
+            display: flex;
+            justify-content: center;
+
+            input {
+                all: unset; // remove existing styling
+    
+                background-color: #e5e5e5;
+                text-align: left;
+                padding: 1.5rem 1rem;
+                width: 21rem;
+            }
+    
+            button {
+                all: unset; // remove existing styling
+    
+                background-color: black;
+                color: white;
+                padding: 1.5rem; // square with same height as input
+    
+                transition: background-color 200ms ease-in-out;
+    
+                &:hover, &:active {
+                    cursor: pointer;                
+                    background-color: lighten(black, 10%);
+                }
+            }
         }
 
-        button {
-            all: unset; // remove existing styling
+        .message {
+            display: block;
+            
+            font-weight: bold;
+            color: red;
 
-            background-color: black;
-            color: white;
-            padding: 1.5rem; // square with same height as input
-
-            transition: 200ms ease-in-out;
-
-            &:hover, &:active {
-                cursor: pointer;                
-                background-color: lighten(black, 10%);
-            }
+            margin-top: 0.5rem;
         }
     }
 }
