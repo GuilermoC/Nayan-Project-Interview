@@ -1,7 +1,7 @@
 <template>
     <div class="banner">
         <div class="container">
-            <div class="row row--countdown bg bg--dark">
+            <div class="row row--countdown">
             
             <h1>{{ title }}</h1>
             <div class="countdown">
