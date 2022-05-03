@@ -1,0 +1,25 @@
+.countdownunit {
+    text-transform: uppercase;
+    font-weight: bold;
+
+    // add margin-left to consecutive countdownunits 
+    & + & {
+        margin-left: 1.25rem;
+    }
+
+    .countdownunit__value {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 2rem;
+
+        background-color: white;
+        color: black;
+
+        margin: 0 0 1.75rem 0;
+
+        width: 6rem;
+        height: 6rem;
+    }
+}

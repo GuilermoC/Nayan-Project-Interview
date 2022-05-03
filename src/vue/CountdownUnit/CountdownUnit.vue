@@ -1,14 +1,19 @@
 <template>
-    <div class="">
-        <div>
+    <div class="countdownunit">
+        <div class="countdownunit__value">
             {{ value }}
         </div>
-        <div>{{ unit }}</div>
+        <div>
+            {{ unit }}
+        </div>
     </div>
 </template>
 
 <script>
 export default {
+
+    name: "CountdownUnit",
+
     props: {
         value: {
             type: Number
